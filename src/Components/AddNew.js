@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
-
+import ResetRating from './ResetRating';
 
 const customStyles = {
   content : {
@@ -55,13 +55,9 @@ render() {
         <h2 ref={subtitle => this.subtitle = subtitle}>New Coffee Like</h2>
         
         <form>
-          <input placeholder ='Coffee Shop Name' />
+          <input className='bottom' placeholder ='Coffee Shop Name' />
           {'  '}
-          <input placeholder = 'Description' />
-          {'  '}
-          <input placeholder = 'stars' />
-          {'  '}
-          <button>Save</button>
+          <ResetRating />
         </form>
       </Modal>
     </div>
