@@ -17,7 +17,7 @@ class ResetRating extends React.Component {
       return (
         <div>
           <ReactRating {...this.props} initialRating={this.state.value}/>
-          <button onClick={this.handleClick}>Save</button>
+          <button class='app' onClick={this.handleClick}>Save</button>
         </div>
       );
     }

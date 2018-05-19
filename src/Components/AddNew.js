@@ -43,7 +43,7 @@ class AddNew extends Component {
 render() {
   return (
     <div>
-      <button onClick={this.openModal}>Open Modal</button>
+      <button onClick={this.openModal}>Add New</button>
       <Modal
         isOpen={this.state.modalIsOpen}
         onAfterOpen={this.afterOpenModal}
@@ -55,8 +55,8 @@ render() {
         <h2 ref={subtitle => this.subtitle = subtitle}>New Coffee Like</h2>
         
         <form>
-          <input className='bottom' placeholder ='Coffee Shop Name' />
-          {'  '}
+          <input class='bottom-space' placeholder ='Coffee Shop Name' />
+
           <ResetRating />
         </form>
       </Modal>
